@@ -1,0 +1,29 @@
+SHORTS MAKER v1.3 — NATURAL VOICE QUICK START (WINDOWS)
+======================================================
+
+You already have Python 3.14 and FFmpeg. Keep them installed.
+
+A) Copy/replace the new Python files into your inner shorts_starter folder
+   (the one with app.py) OR extract the complete v1.3 ZIP to a NEW folder.
+   Do not delete your current outputs/ directory before backing it up.
+
+B) Install Python 3.12 alongside 3.14 (for the optional Kokoro engine):
+   winget install --id Python.Python.3.12 -e
+   Close and reopen PowerShell after installing, then check:
+   py -3.12 --version
+
+C) Open PowerShell INSIDE the inner shorts_starter folder and run:
+   py -3.12 -m venv .voice-venv
+   .\.voice-venv\Scripts\python.exe -m pip install --upgrade pip
+   .\.voice-venv\Scripts\python.exe -m pip install -r requirements-voices.txt
+   python tools\download_kokoro_models.py
+
+D) Launch the app with your existing Python 3.14 main virtualenv:
+   .\.venv\Scripts\python.exe -m streamlit run app.py
+
+E) Choose Natural AI — Kokoro (offline), pick Michael or Heart, type
+   a script, and click Preview voice only. Then render your video.
+
+Kokoro captions are estimates. Watch your Short and correct them.
+The Kokoro model is downloaded separately, not included in the ZIP.
+Full documentation: docs/NATURAL_VOICES.md

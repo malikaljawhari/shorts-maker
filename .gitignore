@@ -1,0 +1,54 @@
+
+# Python environments
+.venv/
+.voice-venv/
+venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local models and generated content
+models/
+outputs/
+downloads/
+temp/
+tmp/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.srt
+
+# Credentials and private settings
+.env
+.env.*
+!.env.example
+client_secrets.json
+token.json
+credentials.json
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# Local configuration
+.streamlit/config.local.toml
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and build files
+*.log
+build/
+dist/
+*.egg-info/

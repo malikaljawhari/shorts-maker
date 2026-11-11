@@ -1,0 +1,4 @@
+# Optional local natural voice engine. Upstream kokoro-onnx needs Python 3.10-3.13.
+# Install into .voice-venv created using Python 3.12, NOT the main Python 3.14 .venv.
+kokoro-onnx==0.6.1
+soundfile>=0.13,<1
