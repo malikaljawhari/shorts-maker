@@ -6,6 +6,16 @@ It uses Streamlit for the user interface and FFmpeg for video processing. Users 
 
 The project also supports multiple text-to-speech options, including local neural voice generation with Kokoro.
 
+## Application Preview
+
+### Video Editing Interface
+
+![Shorts Maker video editing interface](docs/app-interface.png)
+
+### AI Narration and Voice Settings
+
+![Shorts Maker AI narration settings](docs/voice-settings.png)
+
 ## Why I built it
 
 I wanted to explore how Python could automate repetitive video editing tasks while building practical experience with application development, media processing, and software integration.
