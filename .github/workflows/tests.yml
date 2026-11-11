@@ -15,9 +15,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+          python-version: ${{ matrix.python-version }}    
+      - name: Verify FFmpeg
+        run: |
+          command -v ffmpeg
+          command -v ffprobe
+          ffmpeg -version | head -n 1
+          ffprobe -version | head -n 1
       - name: Install test dependencies
         run: python -m pip install -r requirements-dev.txt
       - name: Check syntax
